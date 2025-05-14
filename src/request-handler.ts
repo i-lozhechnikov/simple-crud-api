@@ -1,9 +1,9 @@
 import { IncomingMessage, ServerResponse } from 'http';
-import { executeUsersOperation } from "./user/user.controller.ts";
-import { User } from "./user/user.type.ts";
-import { validateUser } from "./user/user.validator.ts";
+import { executeUsersOperation } from "./user/user.controller";
+import { User } from "./user/user.type";
+import { validateUser } from "./user/user.validator";
 import cluster from "node:cluster";
-import {users} from "./data.ts";
+import {users} from "./data";
 
 type ParsedUrlType = {
   controller: string | null,

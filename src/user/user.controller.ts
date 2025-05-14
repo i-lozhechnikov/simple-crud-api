@@ -1,6 +1,6 @@
-import { User } from "./user.type.ts";
-import {createInvalidRequestException, createNotFoundRequestException, Response} from "../request-handler.ts";
-import { users } from "../data.ts";
+import { User } from "./user.type";
+import {createInvalidRequestException, createNotFoundRequestException, Response} from "../request-handler";
+import { users } from "../data";
 import { v4 as uuidv4, validate as isUuidValid } from 'uuid';
 
 async function getUserById(userId: string): Promise<Response> {

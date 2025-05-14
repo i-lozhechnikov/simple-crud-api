@@ -1,6 +1,6 @@
 import * as dotenv from 'dotenv';
 import * as http from "node:http";
-import { handleRequest } from './request-handler.ts';
+import { handleRequest } from './request-handler';
 
 dotenv.config();
 

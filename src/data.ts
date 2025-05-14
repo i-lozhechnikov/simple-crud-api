@@ -1,3 +1,3 @@
-import {User} from "./user/user.type.ts";
+import {User} from "./user/user.type";
 
 export const users: User[] = [];

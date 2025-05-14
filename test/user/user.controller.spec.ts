@@ -1,6 +1,6 @@
 import request from 'supertest';
-import { app } from '../../src/app.ts';
-import { users } from "../../src/data.ts";
+import { app } from '../../src/app';
+import { users } from "../../src/data";
 import { v4 as uuidv4 } from 'uuid'
 
 type TestUserData = {

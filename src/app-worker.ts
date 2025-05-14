@@ -1,7 +1,7 @@
 import * as http from 'node:http';
 import * as dotenv from 'dotenv';
-import { handleRequest } from './request-handler.ts';
-import {users} from "./data.ts";
+import { handleRequest } from './request-handler';
+import {users} from "./data";
 
 dotenv.config();
 

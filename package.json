@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "Simple CRUD API",
   "main": "index.js",
-  "type": "module",
   "scripts": {
-    "start:dev": "nodemon --watch src --ext ts --exec node --loader ts-node/esm src/app.ts",
+    "start:dev": "nodemon --watch src --ext ts --exec ts-node src/app.ts",
     "start:prod": "tsc && node dist/app.js",
     "start:multi": "tsc && node dist/multi-app.js"
   },

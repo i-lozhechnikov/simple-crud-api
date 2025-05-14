@@ -2,7 +2,7 @@ import cluster from 'node:cluster';
 import * as http from 'node:http';
 import * as os from 'node:os';
 import * as dotenv from 'dotenv';
-import {users} from "./data.ts";
+import {users} from "./data";
 
 dotenv.config();
 
@@ -60,6 +60,6 @@ if (cluster.isPrimary) {
 
 } else {
   (async () => {
-    await import('./app-worker.ts');
+    await import('./app-worker');
   })();
 }
