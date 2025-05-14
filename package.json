@@ -1,0 +1,42 @@
+{
+  "name": "simple-crud-api",
+  "version": "1.0.0",
+  "description": "Simple CRUD API",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch src --ext ts --exec ts-node src/app.ts",
+    "start:prod": "tsc && node dist/app.js",
+    "start:multi": "tsc && node dist/multi-app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i-lozhechnikov/simple-crud-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/i-lozhechnikov/simple-crud-api/issues"
+  },
+  "homepage": "https://github.com/i-lozhechnikov/simple-crud-api#readme",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.17",
+    "@types/supertest": "^6.0.3",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "supertest": "^7.1.0",
+    "ts-jest": "^29.3.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  },
+  "nodemonConfig": {
+    "ignore": ["dist"],
+    "watch": ["src"],
+    "ext": "ts"
+  }
+}
